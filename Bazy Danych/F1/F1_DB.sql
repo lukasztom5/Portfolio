@@ -108,3 +108,16 @@ alter table F1_wynik add foreign key (id_gt) references f1_grandprix_tory(Id_gt)
 alter table F1_wynik add foreign key (id_rok) references f1_rok(Id_rok)
 alter table F1_wynik add foreign key (id_kkr) references f1_kierowca_kraj_rok(Id_kkr)
 alter table F1_wynik add foreign key (id_kksr) references f1_konstruktor_kraj_silnik_rok(Id_kksr)
+----------------------------------------------------------------
+select * from F1_KIEROWCA_KRAJ_ROK
+alter table F1_KIEROWCA_KRAJ_ROK alter column Id_kkr int not null 
+alter table F1_KIEROWCA_KRAJ_ROK add primary key(Id_kkr)
+alter table F1_KIEROWCA_KRAJ_ROK alter column id_kraj int 
+alter table F1_KIEROWCA_KRAJ_ROK alter column id_rok int 
+alter table F1_KIEROWCA_KRAJ_ROK alter column rok int 
+alter table F1_KIEROWCA_KRAJ_ROK alter column miejsce int 
+alter table F1_KIEROWCA_KRAJ_ROK alter column wygrane int 
+alter table F1_KIEROWCA_KRAJ_ROK alter column podium int 
+alter table F1_KIEROWCA_KRAJ_ROK add foreign key (id_kraj) references f1_kraj(Id_kraj)
+alter table F1_KIEROWCA_KRAJ_ROK add foreign key (id_rok) references f1_rok(Id_rok)
+alter table F1_KIEROWCA_KRAJ_ROK add foreign key (id_status) references f1_status(Id_status)
