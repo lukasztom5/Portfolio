@@ -1,0 +1,216 @@
+CREATE TABLE ADMINISTRATOR (
+		IDADMINISTRATOR INTEGER NOT NULL primary key, 
+		Dane XML,
+		LOGIN VARCHAR(100) Unique NOT NULL, 
+		HASLO VARCHAR(100)
+	);
+
+CREATE TABLE AKTUALNE_ZAMOWIENIA (
+		IDAKTUALNE INTEGER NOT NULL PRIMARY KEY,  
+		IDKLIENT INTEGER NOT NULL, 
+		IDPRACOWNIK INTEGER NOT NULL, 
+		IDCZESC INTEGER NOT NULL, 
+		POTWIERDZENIE XML
+	);
+
+CREATE TABLE CZESC (
+		IDCZESC INTEGER NOT NULL PRIMARY KEY,  
+		IDKATEGORIA INTEGER NOT NULL, 
+		IDMODEL INTEGER NOT NULL, 
+		DANE XML
+	);	
+
+CREATE TABLE HISTORIA_ZAMOWIENIA (
+		IDHISTORIA INTEGER NOT NULL PRIMARY KEY,  
+		IDKLIENT INTEGER NOT NULL, 
+		IDPRACOWNIK INTEGER NOT NULL, 
+		IDCZESC INTEGER NOT NULL, 
+		POTWIERDZENIE XML
+	);
+
+CREATE TABLE KATEGORIA (
+		IDKATEGORIA INTEGER NOT NULL PRIMARY KEY,  
+		IDURZADZENIE INTEGER NOT NULL,
+		NAZWA XML
+	);
+
+CREATE TABLE KLIENT (
+		IDKLIENT INTEGER NOT NULL PRIMARY KEY,  
+		DANE XML,
+		LOGIN VARCHAR(100) Unique NOT NULL, 
+		HASLO VARCHAR(100) 
+	);
+
+CREATE TABLE MODEL (
+		IDMODEL INTEGER NOT NULL PRIMARY KEY, 
+		IDURZADZENIE INTEGER NOT NULL, 
+		NAZWA XML
+	);
+
+CREATE TABLE PRACOWNIK (
+		IDPRACOWNIK INTEGER NOT NULL PRIMARY KEY,  
+		IDADMINISTRATOR INTEGER NOT NULL, 
+		UMOWA XML,
+		LOGIN VARCHAR(100) Unique NOT NULL, 
+		HASLO VARCHAR(100) 
+	);
+
+CREATE TABLE ROZLICZENIE (
+		IDROZLICZENIE INTEGER NOT NULL PRIMARY KEY,
+		IDADMINISTRATOR INTEGER NOT NULL, 
+		IDPRACOWNIK INTEGER NOT NULL, 
+		ROZLICZENIE XML
+	);
+
+CREATE TABLE URZADZENIE (
+		IDURZADZENIE INTEGER NOT NULL PRIMARY KEY, 
+		NAZWA xml
+	);
+	
+CREATE TABLE KOSZYK (
+		IDZAKUP INTEGER NOT NULL PRIMARY KEY,
+		IDKLIENT INTEGER not null, 
+		IDCZESC INTEGER not null, 
+		Zakupy XML
+	);		
+
+CREATE or replace VIEW koszyk_dane (id,produkt,liczba,cena) as
+SELECT
+X.* FROM XMLTABLE('db2-fn:xmlcolumn("KOSZYK.ZAKUPY")/koszyk'
+columns 
+"id" integer path 'id/text()',
+"produkt" varchar(100) path 'produkt/text()',
+"liczba" varchar(100) path 'produkt/liczba/text()',
+"suma" varchar(100) path 'produkt/liczba/suma/text()'
+) AS X;
+
+CREATE or replace VIEW model_dane (id,firma,model,link) as
+SELECT
+X.* FROM XMLTABLE('db2-fn:xmlcolumn("MODEL.NAZWA")/model'
+columns 
+"idmodel" integer path 'idmodel/text()',
+"firma" varchar(100) path 'firma/text()',
+"model" varchar(100) path 'firma/model/text()',
+"link" varchar(1000) path 'obraz/text()'
+) AS X;
+
+create or replace view urzadzenie_dane(id,nazwa) as
+select
+X.*from XMLTABLE('db2-fn:xmlcolumn("URZADZENIE.NAZWA")/urzadzenie'
+columns
+"idurzadzenie" integer path 'idurzadzenie/text()',
+"nazwa" varchar(1000) path 'idurzadzenie/nazwa/text()') as X;
+
+CREATE or replace VIEW klient_dane (id,kod,kraj,miasto,zaklad,adres,nazwisko,imie,adres_mail,telefon) as
+SELECT
+X.* FROM XMLTABLE('db2-fn:xmlcolumn("KLIENT.DANE")/klient'
+columns 
+"idklient" integer path 'idklient/text()',
+"kod" varchar(100) path 'idklient/kod/text()',
+"kraj" varchar(100) path 'kraj/text()',
+"miasto" varchar(100) path 'kraj/miasto/text()',
+"zaklad" varchar(100) path 'kraj/miasto/zaklad/text()',
+"adres" varchar(100) path 'kraj/miasto/zaklad/adres/text()',
+"nazwisko" varchar(100) path 'nazwisko/text()',
+"imie" varchar(100) path 'nazwisko/imie/text()',
+"adres_mail" varchar(100) path 'adres_mail/text()',
+"telefon" varchar(100) path 'telefon/text()'
+) AS X;
+
+CREATE or replace VIEW admin_dane (id,kraj,miasto,adres,nazwisko,imie,adres_mail,telefon) as
+SELECT
+X.* FROM XMLTABLE('db2-fn:xmlcolumn("ADMINISTRATOR.DANE")/administrator'
+columns 
+"idadmin" integer path 'idadmin/text()',
+"kraj" varchar(100) path 'kraj/text()',
+"miasto" varchar(100) path 'kraj/miasto/text()',
+"adres" varchar(100) path 'kraj/miasto/adres/text()',
+"nazwisko" varchar(100) path 'nazwisko/text()',
+"imie" varchar(100) path 'nazwisko/imie/text()',
+"adres_mail" varchar(100) path 'adres_mail/text()',
+"telefon" varchar(100) path 'telefon/text()'
+) AS X;
+
+CREATE or replace VIEW prac_dane(id,kod,kraj,miasto,adres,nazwisko,imie,adres_mail,telefon,telefon_sluzbowy,
+numer_konta,pensja,data_zatrudnienia,data_zakonczenia) as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("PRACOWNIK.UMOWA")/pracownik'
+columns
+"idprac" integer path 'idpracownik/text()',
+"kod" varchar(100) path 'idpracownik/kod/text()',
+"kraj" varchar(100) path 'kraj/text()',
+"miasto" varchar(100) path 'kraj/miasto/text()',
+"adres" varchar(100) path 'kraj/miasto/adres/text()',
+"nazwisko" varchar(100) path 'nazwisko/text()',
+"imie" varchar(100) path 'nazwisko/imie/text()',
+"adres_mail" varchar(100) path 'adres_mail/text()',
+"telefon" varchar(100) path 'telefon/text()',
+"telefon_sluzbowy" varchar(100) path 'telefon_sluzbowy/text()',
+"numer_konta" varchar(26) path 'numer_konta/text()',
+"pensja" varchar(26) path 'pensja/text()',
+"data_zatrudnienia" date path 'data_zatr/text()',
+"data_zakonczenia" date path 'data_zatr/data_zak/text()'
+) as X;
+
+CREATE or replace VIEW rozl_widok(id,nazwisko,imie,pensja,data_zatrudnienia,rodzaj_zatrudnienia,
+data_zwolnienia,szczegoly_zwolnienia,data_rozliczenia,wyplata,premia,szczegoly_premii,kara,szczegoly_kary)as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("ROZLICZENIE.ROZLICZENIE")/rozliczenie'
+columns
+"idrozliczenie" integer path 'idrozliczenie/text()',
+"nazwisko" varchar(100) path 'nazwisko/text()',
+"imie" varchar(100) path 'nazwisko/imie/text()',
+"pensja" varchar(100) path 'nazwisko/imie/pensja/text()',
+"data_zatrudnienia" varchar(100) path 'data_zatr/text()',
+"rodzaj_zatrudnienia" varchar(100) path 'data_zatr/rodzaj_zatr/text()',
+"data_zwolnienia" varchar(100) path 'data_zwol/text()',
+"szczegoly_zwolnienia" varchar(100) path 'data_zwol/szczegoly_zwol/text()',
+"data_rozliczenia" varchar(100) path 'data_roz/text()',
+"wyplata" varchar(100) path 'data_roz/wyplata/text()',
+"premia" varchar(100) path 'data_roz/wyplata/premia/text()',
+"szczegoly_premii" varchar(1000) path 'data_roz/wyplata/premia/szczegoly_prem/text()',
+"kara" varchar(100) path 'data_roz/wyplata/kara/text()',
+"szczegoly_kary" varchar(1000) path 'data_roz/wyplata/kara/szczegoly_kary/text()'
+) as X;
+
+CREATE or replace VIEW kat_widok(id,nazwa)as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("KATEGORIA.NAZWA")/kategoria'
+columns
+"idkategoria" integer path 'idkategoria/text()',
+"nazwa" varchar(100) path 'nazwa/text()'
+) as X;
+
+CREATE or replace VIEW aktualne_widok(id,id1,data_zamowienia,data_zakonczenia,status)as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("AKTUALNE_ZAMOWIENIA.POTWIERDZENIE")/aktualne'
+columns
+"idaktualne" integer path 'idaktualne/text()',
+"idkoszyk" integer path 'idaktualne/idkoszyk/text()',
+"data_zamowienia" date path 'data_zamowienia/text()',
+"data_zakonczenie" date path 'data_zamowienia/data_zakonczenia/text()',
+"status" varchar(100) path 'data_zamowienia/data_zakonczenia/status/text()'
+) as X;
+
+CREATE or replace VIEW historia_widok(id,data_zamowienia,data_zakonczenia,status,platnosc,zaplata,cena,ilosc,suma)as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("HISTORIA_ZAMOWIENIA.POTWIERDZENIE")/historia'
+columns
+"idhistoria" integer path 'idhistoria/text()',
+"data_zamowienia" date path 'data_zamowienia/text()',
+"data_zakonczenie" date path 'data_zamowienia/data_zakonczenia/text()',
+"status" varchar(100) path 'data_zamowienia/data_zakonczenia/status/text()',
+"platnosc" varchar(100) path 'data_zamowienia/platnosc/text()',
+"zaplata" varchar(100) path 'data_zamowienia/zaplata/text()',
+"cena" float path 'data_zamowienia/cena/text()',
+"ilosc" integer path 'data_zamowienia/cena/ilosc/text()',
+"suma" float path 'data_zamowienia/cena/ilosc/suma/text()'
+) as X;
+
+
+CREATE or replace VIEW czesc_widok(id,nazwa,cena,ilosc,obraz)as
+select X.* from XMLTABLE('db2-fn:xmlcolumn("CZESC.DANE")/czesc'
+columns
+"idczesc" integer path 'idczesc/text()',
+"nazwa" varchar(1000) path 'nazwa/text()',
+"cena" float path 'nazwa/cena/text()',
+"sztuki" integer path 'nazwa/sztuki/text()',
+"obraz" varchar(10000) path 'obraz/text()'
+) as X;
+
+	

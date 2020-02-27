@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="AutoWypozyczalnia">
+		<class>p.lodz.pl.encje.Administrator</class>
+		<class>p.lodz.pl.encje.AktualneWypozyczenie</class>
+		<class>p.lodz.pl.encje.Auta</class>
+		<class>p.lodz.pl.encje.HistoriaWypozyczenia</class>
+		<class>p.lodz.pl.encje.Klient</class>
+		<class>p.lodz.pl.encje.Kolor</class>
+		<class>p.lodz.pl.encje.Marka</class>
+		<class>p.lodz.pl.encje.Segment</class>
+		<class>p.lodz.pl.encje.Wyposazenie</class>
+		<class>p.lodz.pl.encje.AutoWyposazenie</class>
+		<class>p.lodz.pl.encje.AutoWyposazeniePK</class>
+		<properties>
+			<property name="hibernate.connection.username" value="lukasztom5"/>
+			<property name="hibernate.connection.password" value="avatar2010"/>
+			<property name="hibernate.connection.url" value="jdbc:sqlserver://LUKASZ;databaseName=wypozyczalnia"/>
+			<property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="hibernate.default_schema" value="dbo"/>
+		<property name="hibernate.default_catalog" value="wypozyczalnia"/>
+			<property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/>
+		</properties>
+	</persistence-unit>
+</persistence>

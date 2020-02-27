@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+	   <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="connection.url">jdbc:sqlserver://LUKASZ;databaseName=wypozyczalnia</property>
+		<property name="hibernate.connection.username">lukasztom5</property>
+		<property name="hibernate.connection.password">avatar2010</property>
+		<property name="hibernate.default_schema">dbo</property>
+		<property name="hibernate.default_catalog">wypozyczalnia</property>
+	   <mapping class="p.lodz.pl.encje.Administrator"/>
+	   <mapping class="p.lodz.pl.encje.AktualneWypozyczenie"/>
+	   <mapping class="p.lodz.pl.encje.AutoWyposazeniePK"/>
+	   <mapping class="p.lodz.pl.encje.Auta"/>
+	   <mapping class="p.lodz.pl.encje.AutoWyposazenie"/>
+	   <mapping class="p.lodz.pl.encje.HistoriaWypozyczenia"/>
+	   <mapping class="p.lodz.pl.encje.Klient"/>
+	   <mapping class="p.lodz.pl.encje.Kolor"/>
+	   <mapping class="p.lodz.pl.encje.Marka"/>
+	   <mapping class="p.lodz.pl.encje.Segment"/>
+       <mapping class="p.lodz.pl.encje.Wyposazenie"/>
+	</session-factory>
+</hibernate-configuration>

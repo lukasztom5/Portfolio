@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.ibm.db2.jcc.DB2Driver</property>
+        <property name="hibernate.connection.password">avatar2010</property>
+        <property name="hibernate.connection.url">jdbc:db2://localhost:50000/SAMPLE:retrieveMessagesFromServerOnGetMessage=true;</property>
+        <property name="hibernate.connection.username">db2admin</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.DB2Dialect</property>
+       <mapping class="encje.AdminDane"/> 
+	   <mapping class="encje.Administrator"/>
+	   <mapping class="encje.AktualneZamowienia"/>
+	   <mapping class="encje.Czesc"/>
+	   <mapping class="encje.CzescWidok"/> 
+	    <mapping class="encje.HistoriaZamowienia"/>
+	   <mapping class="encje.Kategoria"/>
+	   <mapping class="encje.KatWidok"/>
+	    <mapping class="encje.Klient"/>
+	   <mapping class="encje.KlientDane"/> 
+	   	   <mapping class="encje.Model"/> 
+	   	 <mapping class="encje.ModelDane"/>  
+	   	 <mapping class="encje.PracDane"/>    
+	   	   <mapping class="encje.Pracownik"/>
+	   	   <mapping class="encje.Rozliczenie"/>
+	   	  <mapping class="encje.RozlWidok"/> 
+	   <mapping class="encje.Urzadzenie"/>
+  <mapping class="encje.UrzadzenieDane"/>
+  <mapping class="encje.AktualneWidok"/>
+  <mapping class="encje.HistoriaWidok"/>
+  <mapping class="encje.Koszyk"/>  
+    <mapping class="encje.KoszykDane"/>  
+    </session-factory>
+</hibernate-configuration>

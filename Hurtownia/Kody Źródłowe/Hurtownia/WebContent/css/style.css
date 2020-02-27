@@ -1,0 +1,439 @@
+/*   Credit: http://www.templatemo.com   */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.5em; 
+	background-color: #eeeff3; background-repeat: repeat-x; background-position: top
+}
+
+
+a.more { /* przycisk, który przenosi na inn¹ stronê - np. informacja o aucie. */
+	display: block; 
+	width: 93px; 
+	height: 29px; 
+	line-height: 29px; 
+	color: #000; 
+	text-align: center; 
+	background: url(../images/templatemo_btn.png) no-repeat; 
+	font-weight: 700; 
+	text-decoration: none; 
+}
+
+a.more2 { /* przycisk, który przenosi na inn¹ stronê - np. informacja o aucie. */
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	width: 150px; 
+	height: 29px; 
+	line-height: 29px; 
+	color: #000; 
+	text-align: center; 
+	background: url(../images/templatemo_btn2.png) no-repeat; 
+	font-weight: 700; 
+	text-decoration: none; 
+}
+
+p { 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #000; 
+	font-weight: normal; 	
+	font-family: Georgia, "Times New Roman", Times, serif; 
+}
+
+h1 { font-size: 48px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 38px; margin: 0 0 25px; padding: 5px 0; }
+h3 { font-size: 30px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 24px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 20px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.h60 { height: 60px }
+
+.float_l { float: left }
+.float_r { float: right }
+
+.image_frame_300 { 
+	position: relative; 
+	width: 300px; 
+	height: 200px; 
+	margin-bottom: 15px;
+	margin-left: 80px;
+	margin-right: auto;
+}
+ 
+.image_frame_300 span { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 300px; 
+	height: 200px; 
+	background: url(../images/image_frame_300x200.png); 
+}
+
+.image_frame_300 img { 
+	width: 700px; 
+	height: 250px; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 30px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 30px; 
+}
+
+
+#templatemo_middle { /* obszar z panelami */
+	clear: both;
+	position: relative;
+	width: 960px;
+	height: 270px;
+	padding: 10px 0;
+}
+
+
+#mid_left { /* wszystko co po lewej stronie - napisy w index.html */
+	float:left; 
+	width: 430px;
+}
+
+#mid_slider { /* obszar ze zdjêciem po prawej stronie */
+	float: right; 
+	width: 480px; 
+	height: 231px; 
+	padding-bottom: 22px; 
+	background: url(../images/templatemo_slider_bg.png) bottom center no-repeat;  
+}
+
+#mid_left p { 
+	color: #333; 
+	font-family: Tahoma, Geneva, sans-serif; 
+	margin-bottom: 30px; 
+	font-size: 16px; 
+	line-height: 26px; 
+}
+
+#learn_more a { /* przycisk wiêcej */
+	position: absolute; 
+	left: 0; 
+	bottom: 0px; 
+	display: block; 
+	width: 220px; 
+	height: 50px; 
+	line-height: 50px; 
+	font-size: 24px; 
+	color: #000; 
+	text-align: center; 
+	background: url(../images/templatemo_big_btn.png) no-repeat;
+}
+
+#learn_more a:hover { 
+	color: #fff; 
+	text-decoration: none; 
+}
+
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+font-family: calibri;
+}
+#mystyle{
+border:solid 2px black;
+margin-top:00px;
+background: whitesmoke;
+border-radius: 5px;
+}
+#mystyle h1 {
+font-size:16px;
+font-weight:bold;
+margin-top:10px;
+margin-bottom:8px;
+text-align:center;
+}
+#mystyle h2 {
+font-size:14px;
+font-weight:bold;
+margin-top:10px;
+margin-bottom:8px;
+text-align:center;
+}
+#mystyle p{
+font-size:13px;
+color:black;
+margin-bottom:20px;
+border-bottom:solid 1px #e5a100;
+padding-bottom:10px;
+text-align:center;
+}
+#mystyle label{
+display:block;
+color:black;
+font-size:15px;
+font-weight:bold;
+text-align:right;
+width:180px;
+float:left;
+}
+#mystyle .additionals{
+color:#666666;
+display:block;
+font-size:9px;
+font-weight:bold;
+text-align:right;
+line-height:30px;
+width:180px;
+}
+#mystyle .small{
+color:black;
+display:block;
+font-size:13px;
+font-weight:normal;
+text-align:right;
+width:180px;
+}
+#mystyle input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #e5a100;
+width:165px;
+margin:2px 0 20px 10px;
+border-radius: 0px;
+}
+#mystyle select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px peru;
+width:170px;
+margin:2px 0 20px 10px;
+border-radius: 5px;
+}
+#mystyle button{
+clear:both;
+margin-left:230px;
+width:125px;
+height:31px;
+background:#666666;
+text-align:center;
+line-height:21px;
+color:#FFFFFF;
+font-family:Calibri;
+font-size:14px;
+font-weight:bold;
+border-radius: 0px;
+}
+.spacer2{clear:both; height:10px;}
+.myform2{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+#mystyle2 button{
+clear:both;
+margin-left:40px;
+margin-top:auto;
+width:300px;
+height:35px;
+background:#666666;
+text-align:center;
+line-height:30px;
+color:#FFFFFF;
+font-size:14px;
+font-family:Calibri;
+font-weight:bold;
+border-radius: 0px;
+}
+.myform3{
+margin:0 auto;
+width:95px;
+}
+#mystyle3 button{
+clear:both;
+margin-left:0px;
+margin-top:auto;
+width:90px;
+height:25px;
+background:#666666;
+text-align:center;
+line-height:15px;
+color:#FFFFFF;
+font-size:14px;
+font-family:Calibri;
+font-weight:bold;
+border-radius: 0px;
+}
+.myform4{
+margin:0 auto;
+width:400px;
+padding:14px;
+font-family: calibri;
+}
+#mystyle4{
+border:solid 2px black;
+margin-top:10px;
+background: whitesmoke;
+border-radius: 5px;
+}
+#mystyle4 h1 {
+font-size:16px;
+font-weight:bold;
+margin-top:10px;
+margin-bottom:8px;
+text-align:center;
+}
+#mystyle4 h2 {
+font-size:14px;
+font-weight:bold;
+margin-top:10px;
+margin-bottom:8px;
+text-align:center;
+}
+#mystyle4 p{
+font-size:13px;
+color:black;
+margin-bottom:20px;
+border-bottom:solid 1px #e5a100;
+padding-bottom:10px;
+text-align:center;
+}
+#mystyle4 label{
+display:block;
+color:black;
+font-size:15px;
+font-weight:bold;
+text-align:right;
+width:180px;
+float:left;
+}
+#mystyle4 .additionals{
+color:#666666;
+display:block;
+font-size:9px;
+font-weight:bold;
+text-align:right;
+line-height:30px;
+width:180px;
+}
+#mystyle4 .small{
+color:black;
+display:block;
+font-size:13px;
+font-weight:normal;
+text-align:right;
+width:180px;
+}
+#mystyle4 input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #e5a100;
+width:165px;
+margin:2px 0 20px 10px;
+border-radius: 0px;
+}
+#mystyle4 select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px peru;
+width:170px;
+margin:2px 0 20px 10px;
+border-radius: 5px;
+}
+#mystyle4 button{
+display:inline;
+width:125px;
+height:31px;
+background:#666666;
+text-align:center;
+line-height:21px;
+color:#FFFFFF;
+font-family:Calibri;
+font-size:14px;
+font-weight:bold;
+border-radius: 0px;
+}
+.myform5{
+margin:0 auto;
+width:1000px;
+padding:14px;
+font-family: calibri;
+}
+.CSSTableGenerator {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+}
+
+.CSSTableGenerator table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd) { 
+	background-color:#e5e5e5; 
+}
+.CSSTableGenerator tr:nth-child(even) { 
+	background-color:#ffffff; 
+}
+.CSSTableGenerator td {
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:15px;
+	font-family:Calibri;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background-color:#4c4c4c;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:16px;
+	font-family:Calibri;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}

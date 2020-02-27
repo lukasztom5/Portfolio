@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Hurtownia">
+	<class>encje.AdminDane</class>
+	<class>encje.Administrator</class>
+	<class>encje.AktualneWidok</class>
+	<class>encje.AktualneZamowienia</class>
+	<class>encje.Czesc</class>
+	<class>encje.CzescWidok</class>
+	<class>encje.HistoriaWidok</class>
+	<class>encje.HistoriaZamowienia</class>
+	<class>encje.KatWidok</class>
+	<class>encje.Kategoria</class>
+	<class>encje.Klient</class>
+	<class>encje.KlientDane</class>
+	<class>encje.Koszyk</class>
+	<class>encje.KoszykDane</class>
+	<class>encje.Model</class>
+	<class>encje.ModelDane</class>
+	<class>encje.PracDane</class>
+	<class>encje.Pracownik</class>
+	<class>encje.RozlWidok</class>
+	<class>encje.Rozliczenie</class>
+	<class>encje.Urzadzenie</class>
+	<class>encje.UrzadzenieDane</class>
+	<properties>
+			<property name="hibernate.connection.username" value="lukasztom5"/>
+			<property name="hibernate.connection.password" value="avatar2010"/>
+			<property name="hibernate.connection.url" value="jdbc:db2://localhost:50000/SAMPLE:retrieveMessagesFromServerOnGetMessage=true;"/>
+			<property name="hibernate.connection.driver_class" value="com.ibm.db2.jcc.DB2Driver"/>
+			<property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/>
+			<property name="hibernate.default_schema" value="dbo"/>
+		</properties>
+	</persistence-unit>
+</persistence>

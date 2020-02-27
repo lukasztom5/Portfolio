@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+    <display-name>KlientRejestracja</display-name>
+    <servlet-name>KlientRejestracja</servlet-name>
+    <servlet-class>kontroler.KlientRejestracja</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KlientRejestracja</servlet-name>
+    <url-pattern>/KlientRejestracja</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>KlientLogin</display-name>
+    <servlet-name>KlientLogin</servlet-name>
+    <servlet-class>kontroler.KlientLogin</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KlientLogin</servlet-name>
+    <url-pattern>/KlientLogin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>KlientInfo</display-name>
+    <servlet-name>KlientInfo</servlet-name>
+    <servlet-class>kontroler.KlientInfo</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KlientInfo</servlet-name>
+    <url-pattern>/KlientInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>KlientModify</display-name>
+    <servlet-name>KlientModify</servlet-name>
+    <servlet-class>kontroler.KlientModify</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KlientModify</servlet-name>
+    <url-pattern>/KlientModify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UsunKlient</display-name>
+    <servlet-name>UsunKlient</servlet-name>
+    <servlet-class>kontroler.UsunKlient</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunKlient</servlet-name>
+    <url-pattern>/UsunKlient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>DodajKlienta</display-name>
+    <servlet-name>DodajKlienta</servlet-name>
+    <servlet-class>kontroler.DodajKlienta</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajKlienta</servlet-name>
+    <url-pattern>/DodajKlienta</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>MoreKlient</display-name>
+    <servlet-name>MoreKlient</servlet-name>
+    <servlet-class>kontroler.MoreKlient</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>MoreKlient</servlet-name>
+    <url-pattern>/MoreKlient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ZnajdzKlienta</display-name>
+    <servlet-name>ZnajdzKlienta</servlet-name>
+    <servlet-class>kontroler.ZnajdzKlienta</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzKlienta</servlet-name>
+    <url-pattern>/ZnajdzKlienta</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ZatrudnijPracownika</display-name>
+    <servlet-name>ZatrudnijPracownika</servlet-name>
+    <servlet-class>kontroler.ZatrudnijPracownika</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZatrudnijPracownika</servlet-name>
+    <url-pattern>/ZatrudnijPracownika</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>PracownikInfo</display-name>
+    <servlet-name>PracownikInfo</servlet-name>
+    <servlet-class>kontroler.PracownikInfo</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>PracownikInfo</servlet-name>
+    <url-pattern>/PracownikInfo</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>MorePracownik</display-name>
+    <servlet-name>MorePracownik</servlet-name>
+    <servlet-class>kontroler.MorePracownik</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>MorePracownik</servlet-name>
+    <url-pattern>/MorePracownik</url-pattern>
+  </servlet-mapping>
+   
+     <servlet>
+    <display-name>PracownikModify</display-name>
+    <servlet-name>PracownikModify</servlet-name>
+    <servlet-class>kontroler.PracownikModify</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>PracownikModify</servlet-name>
+    <url-pattern>/PracownikModify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ZnajdzPracownika</display-name>
+    <servlet-name>ZnajdzPracownika</servlet-name>
+    <servlet-class>kontroler.ZnajdzPracownika</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzPracownika</servlet-name>
+    <url-pattern>/ZnajdzPracownika</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ZnajdzPracownikaPoZarobkach</display-name>
+    <servlet-name>ZnajdzPracownikaPoZarobkach</servlet-name>
+    <servlet-class>kontroler.ZnajdzPracownikaPoZarobkach</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzPracownikaPoZarobkach</servlet-name>
+    <url-pattern>/ZnajdzPracownikaPoZarobkach</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>Zwolnij</display-name>
+    <servlet-name>Zwolnij</servlet-name>
+    <servlet-class>kontroler.Zwolnij</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Zwolnij</servlet-name>
+    <url-pattern>/Zwolnij</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ZnajdzPracownikaPoDatach</display-name>
+    <servlet-name>ZnajdzPracownikaPoDatach</servlet-name>
+    <servlet-class>kontroler.ZnajdzPracownikaPoDatach</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzPracownikaPoDatach</servlet-name>
+    <url-pattern>/ZnajdzPracownikaPoDatach</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>RozliczZatrudnienie</display-name>
+    <servlet-name>RozliczZatrudnienie</servlet-name>
+    <servlet-class>kontroler.RozliczZatrudnienie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>RozliczZatrudnienie</servlet-name>
+    <url-pattern>/RozliczZatrudnienie</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>DodajRozliczZatr</display-name>
+    <servlet-name>DodajRozliczZatr</servlet-name>
+    <servlet-class>kontroler.DodajRozliczZatr</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajRozliczZatr</servlet-name>
+    <url-pattern>/DodajRozliczZatr</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>DodajRozliczZwol</display-name>
+    <servlet-name>DodajRozliczZwol</servlet-name>
+    <servlet-class>kontroler.DodajRozliczZwol</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajRozliczZwol</servlet-name>
+    <url-pattern>/DodajRozliczZwol</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>DodajRozliczenie</display-name>
+    <servlet-name>DodajRozliczenie</servlet-name>
+    <servlet-class>kontroler.DodajRozliczenie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajRozliczenie</servlet-name>
+    <url-pattern>/DodajRozliczenie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UsunPracownika</display-name>
+    <servlet-name>UsunPracownika</servlet-name>
+    <servlet-class>kontroler.UsunPracownika</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunPracownika</servlet-name>
+    <url-pattern>/UsunPracownika</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>DodajUrzadzenie</display-name>
+    <servlet-name>DodajUrzadzenie</servlet-name>
+    <servlet-class>kontroler.DodajUrzadzenie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajUrzadzenie</servlet-name>
+    <url-pattern>/DodajUrzadzenie</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>UsunUrzadzenie</display-name>
+    <servlet-name>UsunUrzadzenie</servlet-name>
+    <servlet-class>kontroler.UsunUrzadzenie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunUrzadzenie</servlet-name>
+    <url-pattern>/UsunUrzadzenie</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+   <servlet>
+    <display-name>UsunModel</display-name>
+    <servlet-name>UsunModel</servlet-name>
+    <servlet-class>kontroler.UsunModel</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunModel</servlet-name>
+    <url-pattern>/UsunModel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>DodajModel</display-name>
+    <servlet-name>DodajModel</servlet-name>
+    <servlet-class>kontroler.DodajModel</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajModel</servlet-name>
+    <url-pattern>/DodajModel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzKategoria</display-name>
+    <servlet-name>WybierzKategoria</servlet-name>
+    <servlet-class>kontroler.WybierzKategoria</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategoria</servlet-name>
+    <url-pattern>/WybierzKategoria</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>DodajKategoria</display-name>
+    <servlet-name>DodajKategoria</servlet-name>
+    <servlet-class>kontroler.DodajKategoria</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajKategoria</servlet-name>
+    <url-pattern>/DodajKategoria</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UsunKategoria</display-name>
+    <servlet-name>UsunKategoria</servlet-name>
+    <servlet-class>kontroler.UsunKategoria</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunKategoria</servlet-name>
+    <url-pattern>/UsunKategoria</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzKategorie</display-name>
+    <servlet-name>WybierzKategorie</servlet-name>
+    <servlet-class>kontroler.WybierzKategorie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategorie</servlet-name>
+    <url-pattern>/WybierzKategorie</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <display-name>DodajCzescM</display-name>
+    <servlet-name>DodajCzescM</servlet-name>
+    <servlet-class>kontroler.DodajCzescM</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajCzescM</servlet-name>
+    <url-pattern>/DodajCzescM</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>WybierzUrzadzenie</display-name>
+    <servlet-name>WybierzUrzadzenie</servlet-name>
+    <servlet-class>kontroler.WybierzUrzadzenie</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzUrzadzenie</servlet-name>
+    <url-pattern>/WybierzUrzadzenie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>UsunCzescM</display-name>
+    <servlet-name>UsunCzescM</servlet-name>
+    <servlet-class>kontroler.UsunCzescM</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunCzescM</servlet-name>
+    <url-pattern>/UsunCzescM</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>WybierzCzescM</display-name>
+    <servlet-name>WybierzCzescM</servlet-name>
+    <servlet-class>kontroler.WybierzCzescM</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzCzescM</servlet-name>
+    <url-pattern>/WybierzCzescM</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <display-name>EditCzescM</display-name>
+    <servlet-name>EditCzescM</servlet-name>
+    <servlet-class>kontroler.EditCzescM</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>EditCzescM</servlet-name>
+    <url-pattern>/EditCzescM</url-pattern>
+  </servlet-mapping> 
+   
+   <servlet>
+    <display-name>DodajCzescK</display-name>
+    <servlet-name>DodajCzescK</servlet-name>
+    <servlet-class>kontroler.DodajCzescK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajCzescK</servlet-name>
+    <url-pattern>/DodajCzescK</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <display-name>WybierzCzesc</display-name>
+    <servlet-name>WybierzCzesc</servlet-name>
+    <servlet-class>kontroler.WybierzCzesc</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzCzesc</servlet-name>
+    <url-pattern>/WybierzCzesc</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>UsunCzesc</display-name>
+    <servlet-name>UsunCzesc</servlet-name>
+    <servlet-class>kontroler.UsunCzesc</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunCzesc</servlet-name>
+    <url-pattern>/UsunCzesc</url-pattern>
+  </servlet-mapping>
+ 
+<servlet>
+    <display-name>EditCzescK</display-name>
+    <servlet-name>EditCzescK</servlet-name>
+    <servlet-class>kontroler.EditCzescK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>EditCzescK</servlet-name>
+    <url-pattern>/EditCzescK</url-pattern>
+  </servlet-mapping>    
+  
+   <servlet>
+    <display-name>WybierzUrzadzeniekat</display-name>
+    <servlet-name>WybierzUrzadzeniekat</servlet-name>
+    <servlet-class>kontroler.WybierzUrzadzeniekat</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzUrzadzeniekat</servlet-name>
+    <url-pattern>/WybierzUrzadzeniekat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzModelkat</display-name>
+    <servlet-name>WybierzModelkat</servlet-name>
+    <servlet-class>kontroler.WybierzModelkat</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzModelkat</servlet-name>
+    <url-pattern>/WybierzModelkat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzKategoriakat</display-name>
+    <servlet-name>WybierzKategoriakat</servlet-name>
+    <servlet-class>kontroler.WybierzKategoriakat</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategoriakat</servlet-name>
+    <url-pattern>/WybierzKategoriakat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzKategoriekat</display-name>
+    <servlet-name>WybierzKategoriekat</servlet-name>
+    <servlet-class>kontroler.WybierzKategoriekat</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategoriekat</servlet-name>
+    <url-pattern>/WybierzKategoriekat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzKategoriaP</display-name>
+    <servlet-name>WybierzKategoriaP</servlet-name>
+    <servlet-class>kontroler.WybierzKategoriaP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategoriaP</servlet-name>
+    <url-pattern>/WybierzKategoriaP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzUrzadzenieP</display-name>
+    <servlet-name>WybierzUrzadzenieP</servlet-name>
+    <servlet-class>kontroler.WybierzUrzadzenieP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzUrzadzenieP</servlet-name>
+    <url-pattern>/WybierzUrzadzenieP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>WybierzModelP</display-name>
+    <servlet-name>WybierzModelP</servlet-name>
+    <servlet-class>kontroler.WybierzModelP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzModelP</servlet-name>
+    <url-pattern>/WybierzModelP</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>WybierzKategorieP</display-name>
+    <servlet-name>WybierzKategorieP</servlet-name>
+    <servlet-class>kontroler.WybierzKategorieP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategorieP</servlet-name>
+    <url-pattern>/WybierzKategorieP</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>RezerCzesc</display-name>
+    <servlet-name>RezerCzesc</servlet-name>
+    <servlet-class>kontroler.RezerCzesc</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>RezerCzesc</servlet-name>
+    <url-pattern>/RezerCzesc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>Rezerwuj</display-name>
+    <servlet-name>Rezerwuj</servlet-name>
+    <servlet-class>kontroler.Rezerwuj</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Rezerwuj</servlet-name>
+    <url-pattern>/Rezerwuj</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>ZmienRezer</display-name>
+    <servlet-name>ZmienRezer</servlet-name>
+    <servlet-class>kontroler.ZmienRezer</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienRezer</servlet-name>
+    <url-pattern>/ZmienRezer</url-pattern>
+  </servlet-mapping>
+ 
+    <servlet>
+    <display-name>ZmienAktualne</display-name>
+    <servlet-name>ZmienAktualne</servlet-name>
+    <servlet-class>kontroler.ZmienAktualne</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienAktualne</servlet-name>
+    <url-pattern>/ZmienAktualne</url-pattern>
+  </servlet-mapping> 
+  
+ <servlet>
+    <display-name>UsunRezer</display-name>
+    <servlet-name>UsunRezer</servlet-name>
+    <servlet-class>kontroler.UsunRezer</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunRezer</servlet-name>
+    <url-pattern>/UsunRezer</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>UsunAktualne</display-name>
+    <servlet-name>UsunAktualne</servlet-name>
+    <servlet-class>kontroler.UsunAktualne</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>UsunAktualne</servlet-name>
+    <url-pattern>/UsunAktualne</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>AnulujRezer</display-name>
+    <servlet-name>AnulujRezer</servlet-name>
+    <servlet-class>kontroler.AnulujRezer</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>AnulujRezer</servlet-name>
+    <url-pattern>/AnulujRezer</url-pattern>
+  </servlet-mapping>  
+  
+     <servlet>
+    <display-name>AnulujAktualne</display-name>
+    <servlet-name>AnulujAktualne</servlet-name>
+    <servlet-class>kontroler.AnulujAktualne</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>AnulujAktualne</servlet-name>
+    <url-pattern>/AnulujAktualne</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>WybierzKategoriaK</display-name>
+    <servlet-name>WybierzKategoriaK</servlet-name>
+    <servlet-class>kontroler.WybierzKategoriaK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategoriaK</servlet-name>
+    <url-pattern>/WybierzKategoriaK</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>WybierzUrzadzenieK</display-name>
+    <servlet-name>WybierzUrzadzenieK</servlet-name>
+    <servlet-class>kontroler.WybierzUrzadzenieK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzUrzadzenieK</servlet-name>
+    <url-pattern>/WybierzUrzadzenieK</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>WybierzKategorieK</display-name>
+    <servlet-name>WybierzKategorieK</servlet-name>
+    <servlet-class>kontroler.WybierzKategorieK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzKategorieK</servlet-name>
+    <url-pattern>/WybierzKategorieK</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>WybierzModelK</display-name>
+    <servlet-name>WybierzModelK</servlet-name>
+    <servlet-class>kontroler.WybierzModelK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WybierzModelK</servlet-name>
+    <url-pattern>/WybierzModelK</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>ZamowCzesc</display-name>
+    <servlet-name>ZamowCzesc</servlet-name>
+    <servlet-class>kontroler.ZamowCzesc</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZamowCzesc</servlet-name>
+    <url-pattern>/ZamowCzesc</url-pattern>
+  </servlet-mapping>
+  
+ 
+    <servlet>
+    <display-name>Zamow</display-name>
+    <servlet-name>Zamow</servlet-name>
+    <servlet-class>kontroler.Zamow</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Zamow</servlet-name>
+    <url-pattern>/Zamow</url-pattern>
+  </servlet-mapping> 
+  
+     <servlet>
+    <display-name>ZmienZamow</display-name>
+    <servlet-name>ZmienZamow</servlet-name>
+    <servlet-class>kontroler.ZmienZamow</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienZamow</servlet-name>
+    <url-pattern>/ZmienZamow</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>AnulujAktualneK</display-name>
+    <servlet-name>AnulujAktualneK</servlet-name>
+    <servlet-class>kontroler.AnulujAktualneK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>AnulujAktualneK</servlet-name>
+    <url-pattern>/AnulujAktualneK</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZmienAktualneK</display-name>
+    <servlet-name>ZmienAktualneK</servlet-name>
+    <servlet-class>kontroler.ZmienAktualneK</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienAktualneK</servlet-name>
+    <url-pattern>/ZmienAktualneK</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+    <display-name>SzukajCzescKatPoModel</display-name>
+    <servlet-name>SzukajCzescKatPoModel</servlet-name>
+    <servlet-class>kontroler.SzukajCzescKatPoModel</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescKatPoModel</servlet-name>
+    <url-pattern>/SzukajCzescKatPoModel</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoModel</display-name>
+    <servlet-name>ZnajdzCzescPoModel</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoModel</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoModel</servlet-name>
+    <url-pattern>/ZnajdzCzescPoModel</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>ZnajdzCzescPoCenach</display-name>
+    <servlet-name>ZnajdzCzescPoCenach</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenach</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenach</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenach</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>SzukajCzescPoFirma</display-name>
+    <servlet-name>SzukajCzescPoFirma</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoFirma</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoFirma</servlet-name>
+    <url-pattern>/SzukajCzescPoFirma</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>SzukajCzescPoModelM</display-name>
+    <servlet-name>SzukajCzescPoModelM</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoModelM</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoModelM</servlet-name>
+    <url-pattern>/SzukajCzescPoModelM</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+    <display-name>ZnajdzCzescPoCenach1</display-name>
+    <servlet-name>ZnajdzCzescPoCenach1</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenach1</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenach1</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenach1</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>KlientModifyKlient</display-name>
+    <servlet-name>KlientModifyKlient</servlet-name>
+    <servlet-class>kontroler.KlientModifyKlient</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KlientModifyKlient</servlet-name>
+    <url-pattern>/KlientModifyKlient</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <display-name>ZmienDane</display-name>
+    <servlet-name>ZmienDane</servlet-name>
+    <servlet-class>kontroler.ZmienDane</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienDane</servlet-name>
+    <url-pattern>/ZmienDane</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <display-name>SzukajCzescPoFirmaP</display-name>
+    <servlet-name>SzukajCzescPoFirmaP</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoFirmaP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoFirmaP</servlet-name>
+    <url-pattern>/SzukajCzescPoFirmaP</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>SzukajCzescPoModelMP</display-name>
+    <servlet-name>SzukajCzescPoModelMP</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoModelMP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoModelMP</servlet-name>
+    <url-pattern>/SzukajCzescPoModelMP</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoCenach1P</display-name>
+    <servlet-name>ZnajdzCzescPoCenach1P</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenach1P</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenach1P</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenach1P</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoCzescP</display-name>
+    <servlet-name>ZnajdzCzescPoCzescP</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCzescP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCzescP</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCzescP</url-pattern>
+  </servlet-mapping> 
+  
+     <servlet>
+    <display-name>ZnajdzCzescPoCzesc</display-name>
+    <servlet-name>ZnajdzCzescPoCzesc</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCzesc</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCzesc</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCzesc</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>SzukajCzescKatPoModelP</display-name>
+    <servlet-name>SzukajCzescKatPoModelP</servlet-name>
+    <servlet-class>kontroler.SzukajCzescKatPoModelP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescKatPoModelP</servlet-name>
+    <url-pattern>/SzukajCzescKatPoModelP</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoModelP</display-name>
+    <servlet-name>ZnajdzCzescPoModelP</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoModelP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoModelP</servlet-name>
+    <url-pattern>/ZnajdzCzescPoModelP</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoCenachP</display-name>
+    <servlet-name>ZnajdzCzescPoCenachP</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenachP</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenachP</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenachP</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>SzukajCzescPoFirmaA</display-name>
+    <servlet-name>SzukajCzescPoFirmaA</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoFirmaA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoFirmaA</servlet-name>
+    <url-pattern>/SzukajCzescPoFirmaA</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>SzukajCzescPoModelMA</display-name>
+    <servlet-name>SzukajCzescPoModelMA</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoModelMA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoModelMA</servlet-name>
+    <url-pattern>/SzukajCzescPoModelMA</url-pattern>
+  </servlet-mapping> 
+  
+     <servlet>
+    <display-name>ZnajdzCzescPoCzescA</display-name>
+    <servlet-name>ZnajdzCzescPoCzescA</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCzescA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCzescA</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCzescA</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>ZnajdzCzescPoCenach1A</display-name>
+    <servlet-name>ZnajdzCzescPoCenach1A</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenach1A</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenach1A</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenach1A</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoModelA</display-name>
+    <servlet-name>ZnajdzCzescPoModelA</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoModelA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoModelA</servlet-name>
+    <url-pattern>/ZnajdzCzescPoModelA</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+    <display-name>SzukajCzescKatPoModelA</display-name>
+    <servlet-name>SzukajCzescKatPoModelA</servlet-name>
+    <servlet-class>kontroler.SzukajCzescKatPoModelA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescKatPoModelA</servlet-name>
+    <url-pattern>/SzukajCzescKatPoModelA</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZnajdzCzescPoCenachA</display-name>
+    <servlet-name>ZnajdzCzescPoCenachA</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenachA</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenachA</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenachA</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+    <display-name>ZmienPrac</display-name>
+    <servlet-name>ZmienPrac</servlet-name>
+    <servlet-class>kontroler.ZmienPrac</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZmienPrac</servlet-name>
+    <url-pattern>/ZmienPrac</url-pattern>
+  </servlet-mapping> 
+  
+      <servlet>
+    <display-name>PrzekazInnemu</display-name>
+    <servlet-name>PrzekazInnemu</servlet-name>
+    <servlet-class>kontroler.PrzekazInnemu</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>PrzekazInnemu</servlet-name>
+    <url-pattern>/PrzekazInnemu</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>SzukajCzescPoFirmaG</display-name>
+    <servlet-name>SzukajCzescPoFirmaG</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoFirmaG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoFirmaG</servlet-name>
+    <url-pattern>/SzukajCzescPoFirmaG</url-pattern>
+  </servlet-mapping> 
+     <servlet>
+    <display-name>SzukajCzescPoModelMG</display-name>
+    <servlet-name>SzukajCzescPoModelMG</servlet-name>
+    <servlet-class>kontroler.SzukajCzescPoModelMG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescPoModelMG</servlet-name>
+    <url-pattern>/SzukajCzescPoModelMG</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <display-name>ZnajdzCzescPoCzescG</display-name>
+    <servlet-name>ZnajdzCzescPoCzescG</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCzescG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCzescG</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCzescG</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <display-name>SzukajCzescKatPoModelG</display-name>
+    <servlet-name>SzukajCzescKatPoModelG</servlet-name>
+    <servlet-class>kontroler.SzukajCzescKatPoModelG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SzukajCzescKatPoModelG</servlet-name>
+    <url-pattern>/SzukajCzescKatPoModelG</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+    <display-name>ZnajdzCzescPoModelG</display-name>
+    <servlet-name>ZnajdzCzescPoModelG</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoModelG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoModelG</servlet-name>
+    <url-pattern>/ZnajdzCzescPoModelG</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <display-name>ZnajdzCzescPoCenachG</display-name>
+    <servlet-name>ZnajdzCzescPoCenachG</servlet-name>
+    <servlet-class>kontroler.ZnajdzCzescPoCenachG</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZnajdzCzescPoCenachG</servlet-name>
+    <url-pattern>/ZnajdzCzescPoCenachG</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+    <display-name>DodajDoKoszyka</display-name>
+    <servlet-name>DodajDoKoszyka</servlet-name>
+    <servlet-class>kontroler.DodajDoKoszyka</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>DodajDoKoszyka</servlet-name>
+    <url-pattern>/DodajDoKoszyka</url-pattern>
+  </servlet-mapping> 
+  
+      <servlet>
+    <display-name>WyjmijzKoszyka</display-name>
+    <servlet-name>WyjmijzKoszyka</servlet-name>
+    <servlet-class>kontroler.WyjmijzKoszyka</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>WyjmijzKoszyka</servlet-name>
+    <url-pattern>/WyjmijzKoszyka</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <display-name>Koszykklient</display-name>
+    <servlet-name>Koszykklient</servlet-name>
+    <servlet-class>kontroler.Koszykklient</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Koszykklient</servlet-name>
+    <url-pattern>/Koszykklient</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <display-name>ZatwierdzKoszyk</display-name>
+    <servlet-name>ZatwierdzKoszyk</servlet-name>
+    <servlet-class>kontroler.ZatwierdzKoszyk</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ZatwierdzKoszyk</servlet-name>
+    <url-pattern>/ZatwierdzKoszyk</url-pattern>
+  </servlet-mapping> 
+  
+     <servlet>
+    <display-name>KoszykSzczegoly</display-name>
+    <servlet-name>KoszykSzczegoly</servlet-name>
+    <servlet-class>kontroler.KoszykSzczegoly</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>KoszykSzczegoly</servlet-name>
+    <url-pattern>/KoszykSzczegoly</url-pattern>
+  </servlet-mapping> 
+  
+       <servlet>
+    <display-name>OdrzucZakup</display-name>
+    <servlet-name>OdrzucZakup</servlet-name>
+    <servlet-class>kontroler.OdrzucZakup</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>OdrzucZakup</servlet-name>
+    <url-pattern>/OdrzucZakup</url-pattern>
+  </servlet-mapping>
+</web-app>
