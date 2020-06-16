@@ -7,7 +7,7 @@
   	<name>wypozyczalnia Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>4.0.1.RELEASE</spring.version>
+		<spring.version>5.2.7.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 			<dependency>
@@ -83,7 +83,7 @@
 	<dependency>
 	<groupId>org.springframework</groupId>
 	<artifactId>spring-core</artifactId>
-	<version>4.0.5.RELEASE</version>
+	<version>5.2.7.RELEASE</version>
 </dependency>
 <dependency>
 	<groupId>javax.servlet</groupId>
