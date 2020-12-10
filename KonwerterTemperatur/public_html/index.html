@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konwerter temperatur</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/styleCSS.css" rel="stylesheet">
+        <script src="JS/temperatura.js"></script>
+    </head>
+    <body>
+        <div id="panel_glowny">
+            <div id="naglowek_panelu">
+                <h1 id="tytul">Konwerter temperatur</h1>
+            </div>
+            <div id="panel">
+                    <!--Panel wejściowy-->
+                    <div id="od">
+                        <h2>Wartość i jednostka temperatury</h2><br>
+                        <div class="formularz">
+                            <!--Do wpisania wartości-->
+                            <label>Wartość: <input placeholder="Wpisz wartość"  id="wartosc" type="number"></label><br>
+                            <!--Do wybrania jednostki-->
+                            <label>Jednostka: <input list="lista_jednostek" class="lista" placeholder="Wybierz jednostkę" id="jednostka_od"></label>
+                        </div>
+                        <!--Komunikat o błędzie dla panelu wejściowego-->
+                        <p class="komunikat" id="komunikatOd"></p>
+                    </div>
+                    <!--Panel wyjściowy-->
+                    <div id="do">
+                        <h2>Temperaturę w jakiej skali wyświetlić?</h2><br>
+                        <div class="formularz">
+                            <label>Jednostka: <input list="lista_jednostek" class="lista" placeholder="Wybierz jednostkę" id="jednostka_do"></label><br>
+                        </div>
+                        <!--Komunikat o błędzie dla panelu wyjściowego-->
+                        <p class="komunikat" id="komunikatDo"></p>
+                        <!--Lista jednostek-->
+                        <datalist id="lista_jednostek">
+                            <option value="Celcjusz">[&degC]</option>
+                            <option value="Kelvin">[K]</option>
+                            <option value="Farenheit">[&degF]</option>
+                        </datalist>
+                    </div>
+                    <!--Przycisk-->
+                    <div id='oblicz'>
+                        <p>Oblicz</p>
+                    </div>
+                    <!--Panel z wynikiem działania lub błędem-->
+                    <div id='panelWyniku'>
+                        <!--Wynik lub błąd-->
+                        <p id="wynik"><p/>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+Aplikacja do konwertowania temperatur
+
+Składa się z 2 paneli do wpisywania danych:
+
+* formularz do wprowadzania wartości i jednostki wejściowej - tytuł "Wartość i jednostka temperatury"
+* formularz do jednostki wyjściowej - tytuł "Temperaturę w jakiej skali wyświetlić?"
+
+Po wpisaniu danych kliknąć przycisk "Oblicz"
+
+Na dole pojawi się panel w wynikiem zamiany temperatur
+
+
+
+Każdy z paneli posiada własny blok dla błędów. W wynikowm panelu też mogą być wyświetlone informacje o błędach.
+
+Jeśli jest błąd w bloku wejściowym wyświetli się komunikat o oznaczy błędne inputy.
+
+Jeśli jest błąd w bloku wyjściowym wyświetli się komunikat o oznaczy błędne inputy.
+
+Jeśli błąd jest ten sam dla obu paneli to komunikat o błędzie będzie wyświetlony w panelu wyniku.
+
+Wraz z komunikatami o błędach będą oznaczone na czerwono inputy, w których jest błędna wartość.
+
+
